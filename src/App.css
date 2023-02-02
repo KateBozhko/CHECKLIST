@@ -1,38 +1,12 @@
-.App {
-  text-align: center;
+body {
+  background-image: url("https://img.freepik.com/free-photo/empty-clipboard-with-twig-leaves_23-2148236737.jpg?w=996&t=st=1675333168~exp=1675333768~hmac=034a58ceb6ad23574cd815d44a98e72febdcc9aac2f8e44d9e0e44c5b802770c");
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 80vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
+ 
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
