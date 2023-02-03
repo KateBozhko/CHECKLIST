@@ -23,6 +23,11 @@ crossWord(event) {
     let li = event.target;
     li.classList.target('cross')
 }
+deleteItem() {
+    let arr = this.setState.listArray;
+    arr = [];
+    this.setState({listArray: arr})
+}
 
     render() {
         return (
@@ -41,7 +46,9 @@ crossWord(event) {
        <li onClick={this.crossWord} key={index}>{item}</li>
     ))}
 </ul>
-
+<div>
+    <button onClick={() => this.deleteItem()}>DELETE</button>
+</div>
 
 </div>
         )
