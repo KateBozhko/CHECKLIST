@@ -1,6 +1,7 @@
  import './App.css';
  import imageTwo from './imageTwo.jpg';
- import { Checklist } from "./InputComponent"
+import { Checklist } from './InputComponent';
+ 
  
 
 function App() {
