@@ -11,6 +11,61 @@ body {
   align-items: center;
 }
 .cross {
-  text-decoration: line through 2px red;
-  background-color: #f0f0f0;
+  text-decoration: line-through 2px red;
+}
+.btnOne, .btnTwo {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #CFE8A9;
+  border: none;
+  margin-right: 100px;
+  font-size: 25px;
+  color: #4C3A51;
+  font-family: 'Tapestry', cursive;
+}
+.input {
+ padding: 15px 10px;
+ width: 100vh;
+ margin-right: 130px;
+ border-radius: 20px;
+ border: 3px solid red;
+ background-color: rgb(101, 39, 39, .6);
+ color: white;
+ font-weight: bold;
+ font-size: 30px;
+ font-family: 'Tapestry', cursive;
+}
+form {
+  background-color: rgba(187, 23, 23, 0.5);
+  padding: 100px 100px;
+  border-radius: 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.btnTwo {
+  margin-left: 15px;
+
+}
+h1 {
+  color: #4C3A51;
+  font-size: 45px;
+  letter-spacing: 3px;
+  font-family: 'Tapestry', cursive;
+}
+li {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 5px;
+  background-color: #4C3A51;
+  color: white;
+  border-radius: 20px;
+  border-bottom: 1px solid white;
+  padding: 5px 20px;
+}
+
+.tick {
+margin-right: 5px;  
 }

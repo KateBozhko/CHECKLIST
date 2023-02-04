@@ -1,4 +1,5 @@
 import { Component } from "react";
+import tick from './tick.png';
 
 
 export class Checklist extends Component {
@@ -20,36 +21,45 @@ addItem(input) {
     }
 }
 crossWord(event) {
-    let li = event.target;
-    li.classList.target('cross')
+    const li = event.target;
+    li.classList.toggle('cross')
 }
 deleteItem() {
     let arr = this.setState.listArray;
     arr = [];
     this.setState({listArray: arr})
 }
+onSubmit(e) {
+e.preventDefault()
+}
 
     render() {
         return (
 <div>
+    <form onSubmit={this.onSubmit}>
     <div>
-    <input placeholder="Enter your deal..."
+    <input className="input" placeholder="Enter your deal..."
     type="text"
     value={this.state.userinput}
     onChange={(e) => {this.changeInput(e.target.value)}}/>
 </div>
+<div className="buttons">
 <div>
-<button onClick={() => this.addItem(this.state.userinput)}>ADD A DEAL</button>
-</div>
+<button className="btnOne" onClick={() => this.addItem(this.state.userinput)}>ADD A DEAL</button>
+
 <ul>
     {this.state.listArray.map((item, index) => (
-       <li onClick={this.crossWord} key={index}>{item}</li>
+       <li onClick={this.crossWord} key={index}>
+           <img className="tick" src={tick} width="20px" alt="tick"/>
+           {item}</li>
     ))}
 </ul>
 <div>
-    <button onClick={() => this.deleteItem()}>DELETE</button>
+    <button className="btnTwo" onClick={() => this.deleteItem()}>DELETE</button>
 </div>
-
+</div>
+</div>
+</form>
 </div>
         )
     }
